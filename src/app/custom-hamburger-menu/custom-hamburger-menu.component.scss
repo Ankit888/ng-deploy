@@ -1,0 +1,14 @@
+.hamburger-menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+
+  .toggle-button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}

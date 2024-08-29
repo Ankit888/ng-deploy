@@ -1,0 +1,7 @@
+<div class="side-nav" [ngClass]="{ 'open': isOpen }">
+  <button class="close-btn" (click)="close.emit()">×</button>
+  <nav>
+    <a routerLink="/grid" (click)="close.emit()">Grid View</a>
+    <a routerLink="/tiles" (click)="close.emit()">Tile View</a>
+  </nav>
+</div>

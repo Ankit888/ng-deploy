@@ -1,0 +1,21 @@
+<div class="tile-container">
+  <mat-card *ngFor="let student of students" (click)="viewDetails(student.id)">
+    <mat-card-title>{{student.name}}</mat-card-title>
+    <mat-card-content>
+      <p>Email: {{student.email}}</p>
+      <p>Phone: {{student.phone}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-icon-button (click)="editStudent(student)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button (click)="flagStudent(student)">
+        <mat-icon>flag</mat-icon>
+      </button>
+      <button mat-icon-button (click)="deleteStudent(student)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

@@ -1,0 +1,6 @@
+<div class="hamburger-menu">
+  <button class="toggle-button" (click)="toggleSidebar()">
+    Toggle Sidebar
+  </button>
+</div>
+<app-side-nav [isOpen]="sidebarOpen" (close)="toggleSidebar()"></app-side-nav>

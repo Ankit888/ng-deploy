@@ -1,0 +1,41 @@
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: #fff;
+  transform: translateX(0); /* Always visible */
+  transition: transform 0.3s ease;
+  z-index: 999;
+
+  .close-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 0;
+      font-size: 18px;
+
+      &:hover {
+        background: #555;
+      }
+    }
+  }
+}
+

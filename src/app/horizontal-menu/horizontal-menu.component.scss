@@ -1,0 +1,77 @@
+/* Style for the mat-toolbar */
+mat-toolbar {
+  position: relative;
+  background-color: #3f51b5; /* Primary color, adjust as needed */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 0 16px; /* Padding for better spacing */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space items evenly */
+}
+
+/* Style for the hamburger button */
+mat-icon-button {
+  position: absolute;
+  left: 16px; /* Adjust for spacing from the left edge */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background color */
+  border-radius: 50%; /* Rounded button */
+  padding: 8px; /* Space around the icon */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the hamburger button */
+mat-icon-button:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Lighter background on hover */
+  transform: translateY(-50%) scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Style for the icon */
+mat-icon {
+  font-size: 24px; /* Adjust icon size */
+}
+
+/* Style for the toolbar buttons */
+mat-button {
+  color: white;
+  font-size: 16px; /* Adjust font size */
+  margin-left: 16px; /* Space between buttons */
+}
+
+/* Hover effect for toolbar buttons */
+mat-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Ensure toolbar content stays aligned */
+mat-toolbar .spacer {
+  flex: 1 1 auto; /* Ensure space is distributed between items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  mat-toolbar {
+    flex-direction: column; /* Stack items vertically on small screens */
+    text-align: center; /* Center text and buttons on small screens */
+    justify-content: space-around;
+  }
+
+  mat-icon-button {
+    position: relative; /* Adjust for vertical stacking */
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    transform: none;
+  }
+
+  mat-button {
+    margin-left: 0; /* Remove margin on small screens */
+    margin-top: 8px; /* Space buttons vertically */
+  }
+}

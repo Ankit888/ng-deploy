@@ -1,0 +1,21 @@
+// .menu-item {
+//   font-size: 18px;
+//   color: #3f51b5;
+//   font-weight: 500;
+// }
+
+// .menu-item:hover {
+//   background-color: #e3f2fd;
+// }
+
+mat-nav-list {
+  display: block; /* Ensure it’s visible */
+}
+
+/* Ensure the list items are visible */
+mat-nav-list {
+  display: block; /* Ensure it is displayed */
+}
+mat-list-item {
+  display: block; /* Ensure items are visible */
+}
